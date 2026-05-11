@@ -18,3 +18,4 @@ for line in open("f1.txt","r").readlines():
 print("Total lines copied:",count)
 file1.close()
 file2.close()
+
