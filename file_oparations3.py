@@ -10,6 +10,7 @@ with open('coding.txt','r') as file:
         print(word)
 file.close()
 
+#duplicate words
 updated=open('updated.txt','w')
 repeated=open('repeated.txt','r')
 
@@ -20,3 +21,11 @@ for line in repeated:
         duplicate.add(line)
 updated.close()
 repeated.close()
+
+#removing files
+import os
+print('Checking if file exists or not')
+if os.path.exists('updated.txt'):
+    os.remove('updated.txt')
+    print('File removed successfully')
+else:    print('It does not exist')
